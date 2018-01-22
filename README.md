@@ -1,4 +1,9 @@
-# Spiral_Pancake_Generator
-The purpose of this app is to create spiral pancakes for the PancakeBot.
-The PancakeBot uses a .GCODE file and some simple commands to create pancakes.  This app allows you to move some sliders, generate a spiral, then download the spiral!
-The working version can be found at http://www.kreativperspektiv.com/spg
+# Being Mig
+Hola Mundo!  
+My name is Miguel Valenzuela and I am an engineer, photographer, artist and inventor of PancakeBot.
+I set this GitHub page up to make it easy to post my small projects for other to see.  I wish I could say I was a professional programmer but I am more of a professional 'Jack-of-all-trades and master-of-nothing' kind of thing.
+But I want to become more profficient at learning Javascript and so I am working on creating small programs for PancakeBot to generate pancakes outside of the normal Pancake Painter Program.
+One that I have created recently is called Spiral Pancake Generator and was created with the help of Chris Means and Kris Pagels.  
+Check it out here at migpics.github.io/spg
+Next, on to new adventures!
+Miguel
