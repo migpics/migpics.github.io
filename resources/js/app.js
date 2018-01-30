@@ -123,6 +123,23 @@ $(document).ready(
                 finalCode); 
         } 
         
+        function generatePBP() 
+        { 
+          var preCode = ["G21;  Set Units to MM", "G1 F7600;  Set Speed", "M107; Pump Off", "M84; Motors off", 
+                       "G28; Home All Axis", myGCode[0] + "M106; Pump On" ]; 
+         
+           var drawingCode = preCode.concat(myGCode).join('\n\n'); 
+          
+           var endCode = ["M107; Pump Off" , "G28; Home All Axis"];
+          
+           var finalCode = drawingCode.concat(endCode);
+            
+            download(
+
+                'Pancake_Spiral.GCODE', 
+                finalCode); 
+        } 
+        
          function download(filename, pbpCode) 
         { 
             var element = 
@@ -202,11 +219,11 @@ $(document).ready(
             });
 
         // gcode button click event handler
-        $('button').click(
+        $('button.GC').click(
             generateGCode);
         
         //pbp button click event handler
-        $('pbp.button').click(
+        $('button.PP').click(
             generatePBP);
 
         // Draw the initial spiral.
