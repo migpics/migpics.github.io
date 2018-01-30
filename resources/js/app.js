@@ -123,6 +123,31 @@ $(document).ready(
                 finalCode); 
         } 
         
+         function download(filename, pbpCode) 
+        { 
+            var element = 
+                document.createElement('a'); 
+
+            element.setAttribute(
+                'href', 
+                'data:text/plain;charset=utf-8,{0}'.format(
+                    encodeURIComponent(
+                        pbpCode))); 
+            
+            element.setAttribute(
+                'download', 
+                filename); 
+            element.style.display = 
+                'none'; 
+            
+            document.body.appendChild(
+                element); 
+            element.click(); 
+            
+            document.body.removeChild(
+                element); 
+        }
+        
         function download(filename, gcode) 
         { 
             var element = 
@@ -176,9 +201,13 @@ $(document).ready(
                 updateSpiral();
             });
 
-        // Button click handler event.
+        // gcode button click event handler
         $('button').click(
             generateGCode);
+        
+        //pbp button click event handler
+        $('pbp.button').click(
+            generatePBP);
 
         // Draw the initial spiral.
         updateSpiral();
