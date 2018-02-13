@@ -219,11 +219,11 @@ $(document).ready(
             });
 
         // gcode button click event handler
-        $('button.GC').click(
+        $('buttonGC').click(
             generateGCode);
         
         //pbp button click event handler
-        $('button.PP').click(
+        $('buttonPP').click(
             generatePBP);
 
         // Draw the initial spiral.
