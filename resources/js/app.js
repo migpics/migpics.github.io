@@ -125,8 +125,8 @@ $(document).ready(
         
         function generatePBP() 
         { 
-          var preCode = ["G21;  Set Units to MM", "G1 F7600;  Set Speed", "M107; Pump Off", "M84; Motors off", 
-                       "G28; Home All Axis", myGCode[0] + "M106; Pump On" ]; 
+          var preCode = ["G21;  Set Units to MM\n", "G1 F7600;  Set Speed\n", "M107; Pump Off\n", "M84; Motors off\n", 
+                       "G28; Home All Axis\n", myGCode[0] + '\n', "M106; Pump On\n" ]; 
          
            var drawingCode = preCode.concat(myGCode).join('\n\n'); 
           
