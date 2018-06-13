@@ -67,9 +67,10 @@ $(document).ready(
             {
                 myAngle = myAngle + angleChange;
 
-                for (var i = 0; i < myCompletionAngle; i++) 
+                //for (var i = 0; i < myCompletionAngle; i++) 
+                for (var i = 0; i < myCompletionAngle; i+5) 
                 {
-                    context.gobalAlpha = 0.1;
+                    context.globalAlpha = 0.1;
                     context.lineTo(
                         startX + lineDistance * (Math.cos(Math.PI * (myAngle + i) / 180)), 
                         (startY + lineDistance * (Math.sin(Math.PI * (myAngle + i) / 180))));
@@ -84,7 +85,7 @@ $(document).ready(
                 }
             }
             
-            context.gobalAlpha = 0.1;
+            context.globalAlpha = 0.1;
             context.lineWidth = 2;
             context.stroke();
         }
