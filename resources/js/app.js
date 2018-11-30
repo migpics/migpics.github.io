@@ -133,7 +133,7 @@ $(document).ready(
                 finalCode); 
         } 
         
-        function generatePBP() //Generates the PBP file
+        function generatePBPCODE() //Generates the PBP file
         { 
           
            var preCode = [["Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{"applyMatrix":true,"data":{"color":0,"isPolygonal":true},"segments":[" ];
@@ -150,6 +150,9 @@ $(document).ready(
                 finalCode); 
         } 
         
+                                                                                                   
+                                                                                                   
+        //Funciton for Downloading GCODE                                                                                           
          function download(filename, pbpCode) 
         { 
             var element = 
@@ -202,6 +205,7 @@ $(document).ready(
                 element); 
         }
         
+                                                                                                   
         // Write out all input control HTML.
         $('#inputControls').html(
             Mustache.render(
@@ -236,7 +240,7 @@ $(document).ready(
         
         //pbp button click event handler
         $('#PBPDL').click(
-            generatePBP);
+            generatePBPCODE);
 
         // Draw the initial spiral.
         updateSpiral();
