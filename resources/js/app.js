@@ -47,7 +47,7 @@ $(document).ready(
         // Initialize the list of "variables."
         var variables = 
             [
-                { name: 'clipAngle', label: 'Clip Anglesssss', value: 80 },
+                { name: 'clipAngle', label: 'Clip Angles', value: 80 },
                 { name: 'iterations', label: 'Iterations', value: 52 },
                 { name: 'angle2', label: 'Angle 2', value: 21 },
                 { name: 'size', label: 'Size', value: 52 },
