@@ -58,6 +58,7 @@ $(document).ready(
         function draw(startX, startY, myAngle, lineDistance, angleChange, myIterations, myCompletionAngle) 
         {
             myGCode = new Array();
+            myPBPCode = new Array();
             context.clearRect(0, 0, a_canvas.width, a_canvas.height);
             context.beginPath();
             context.moveTo(startX, startY);
@@ -84,10 +85,15 @@ $(document).ready(
                         'G00 X{0} Y{1};'.format(
                             Math.round(startX * 100) / 100,
                             Math.round(startY * 100) / 100));
+                    
+                    myPBPCode.push(
+                        '[{0},{1}]'.format(
+                            Math.round(startX * 100) / 100,
+                            Math.round(startY * 100) / 100));
                 }
             }
             
-            context.gobalAlpha = 0.1;
+            context.globalAlpha = 0.1;
             context.lineWidth = 2;
             context.stroke();
         }
@@ -109,7 +115,7 @@ $(document).ready(
                 myCompletionAngle * getSliderValue('clipAngle'));
         }
         
-        function generateGCode() 
+        function generateGCode() //Generates the GCODE file
         { 
           var preCode = ["G21;  Set Units to MM\n", "G1 F7600;  Set Speed\n", "M107; Pump Off\n", "M84; Motors off\n", 
                        "G28; Home All Axis\n", myGCode[0] + '\n', "M106; Pump On\n" ]; 
@@ -126,20 +132,20 @@ $(document).ready(
                 finalCode); 
         } 
         
-        function generatePBP() 
+        function generatePBP() //Generates the PBP file
         { 
-          var preCode = ["G21;  Set Units to MM\n", "G1 F7600;  Set Speed\n", "M107; Pump Off\n", "M84; Motors off\n", 
-                       "G28; Home All Axis\n", myGCode[0] + '\n', "M106; Pump On\n" ]; 
-         
-           var drawingCode = preCode.concat(myGCode).join('\n\n'); 
           
-           var endCode = ["M107; Pump Off" , "G28; Home All Axis"];
+           var preCode = [["Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{"applyMatrix":true,"data":{"color":0,"isPolygonal":true},"segments":[" ];
+         
+           var drawingCode = preCode.concat(myPBPCode.join('\n\n'); //Change this to PBP Information
+          
+           var endCode = ["],"closed":true,"strokeColor":[1,0.91765,0.49412],"strokeWidth":5,"strokeCap":"round","miterLimit":1}]]}]]"];
           
            var finalCode = drawingCode.concat(endCode);
             
             download(
 
-                'Pancake_Spiral.GCODE', 
+                'Pancake_Spiral.PBP', 
                 finalCode); 
         } 
         
