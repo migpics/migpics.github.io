@@ -152,7 +152,7 @@ $(document).ready(
         
                                                                                                    
                                                                                                    
-        //Funciton for Downloading GCODE                                                                                           
+        //Function for Downloading GCODE                                                                                           
          function download(filename, pbpCode) 
         { 
             var element = 
