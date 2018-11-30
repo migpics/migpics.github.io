@@ -34,6 +34,7 @@ $(document).ready(
         var myCompletionAngle = 360;
 
         var myGCode = new Array();
+        var myPBPCode = new Array();
 
         context.strokeStyle = "#ffcc00";
         
@@ -174,6 +175,8 @@ $(document).ready(
                 element); 
         }
         
+                                                                                                   
+        //Function for Downloading GCODE
         function download(filename, gcode) 
         { 
             var element = 
