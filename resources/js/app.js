@@ -136,7 +136,7 @@ $(document).ready(
         function generatePBPCODE() //Generates the PBP file
         { 
           
-           var PBPpreCode = ["["Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{"applyMatrix":true,"data":{"color":0,"isPolygonal":true},"segments":[" "];
+           var PBPpreCode = ["["Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{"applyMatrix":true,"data":{"color":0,"isPolygonal":true},"segments":[ "];
          
            var PBPdrawingCode = PBPpreCode.concat(myPBPCode).join('\n\n'); //Change this to PBP Information
           
