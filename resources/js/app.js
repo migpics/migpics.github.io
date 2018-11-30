@@ -136,13 +136,13 @@ $(document).ready(
         function generatePBPCODE() //Generates the PBP file
         { 
           
-           var PBPpreCode = ["["Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{"applyMatrix":true,"data":{"color":0,"isPolygonal":true},"segments":[ "];
+           var preCode = ["Startstuffhere" ];
          
-           var PBPdrawingCode = PBPpreCode.concat(myPBPCode).join('\n\n'); //Change this to PBP Information
+           var drawingCode = preCode.concat(myPBPCode).join('\n\n'); //Change this to PBP Information
           
-           var PBPendCode = ["],"closed":true,"strokeColor":[1,0.91765,0.49412],"strokeWidth":5,"strokeCap":"round","miterLimit":1}]]}]]"];
+           var endCode = ["End Stuff Here"];
           
-           var PBPfinalCode = PBPdrawingCode.concat(PBPendCode);
+           var finalCode = drawingCode.concat(endCode);
             
             download(
 
