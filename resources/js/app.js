@@ -13,6 +13,8 @@ String.prototype.format =
             return s;
         };
 
+
+
 $(document).ready(
     function()
     {
@@ -70,7 +72,7 @@ $(document).ready(
                 //This loop moves the head one step and then tracks the coordinates.  By implementing i+=5, we can then control the resolution.
                 for (var i = 0; i < myCompletionAngle; i+=5) 
                 {
-                    context.gobalAlpha = 0.1;
+                    context.globalAlpha = 0.1;
                     context.lineTo(
                         startX + lineDistance * (Math.cos(Math.PI * (myAngle + i) / 180)), 
                         (startY + lineDistance * (Math.sin(Math.PI * (myAngle + i) / 180))));
