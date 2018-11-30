@@ -47,7 +47,7 @@ $(document).ready(
         // Initialize the list of "variables."
         var variables = 
             [
-                { name: 'clipAngle', label: 'Clip Angle', value: 80 },
+                { name: 'clipAngle', label: 'Clip Anglesssss', value: 80 },
                 { name: 'iterations', label: 'Iterations', value: 52 },
                 { name: 'angle2', label: 'Angle 2', value: 21 },
                 { name: 'size', label: 'Size', value: 52 },
@@ -94,7 +94,7 @@ $(document).ready(
                 }
             }
             
-            context.globalAlpha = 0.1;
+            context.globalAlpha = 0.5;
             context.lineWidth = 2;
             context.stroke();
         }
@@ -116,7 +116,11 @@ $(document).ready(
                 myCompletionAngle * getSliderValue('clipAngle'));
         }
         
-        function generateGCode() //Generates the GCODE file
+        
+        
+        //Generates the GCODE file
+        
+        function generateGCode() 
         { 
           var preCode = ["G21;  Set Units to MM\n", "G1 F7600;  Set Speed\n", "M107; Pump Off\n", "M84; Motors off\n", 
                        "G28; Home All Axis\n", myGCode[0] + '\n', "M106; Pump On\n" ]; 
