@@ -32,7 +32,7 @@ $(document).ready(
         var angleChange = 360;
         var myIterations = 36;
         var myCompletionAngle = 360;
-        var myResolution = 5;
+     
 
         var myGCode = new Array();
         var myPBPCode = new Array();
@@ -49,7 +49,6 @@ $(document).ready(
         var variables = 
             [
                 { name: 'clipAngle', label: 'Clip Angles', value: 80 },
-                { name: 'resolution', label: 'Resolution', value: 100 },
                 { name: 'iterations', label: 'Iterations', value: 52 },
                 { name: 'angle2', label: 'Angle 2', value: 21 },
                 { name: 'size', label: 'Size', value: 50},
@@ -112,7 +111,6 @@ $(document).ready(
                 canvas_width * getSliderValue('xAxis'), 
                 canvas_height * getSliderValue('yAxis'), 
                 myAngle * getSliderValue('angle1'),
-                myResolution * getSliderValue('resolution'),////
                 lineDistance * getSliderValue('size'), 
                 angleChange * getSliderValue('angle2'), 
                 myIterations * getSliderValue('iterations'), 
