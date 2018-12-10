@@ -28,7 +28,7 @@ $(document).ready(
         var canvas_height = 200;
 
         var myAngle = 360;
-        var lineDistance = 1;
+        var lineDistance = 100;
         var angleChange = 360;
         var myIterations = 36;
         var myCompletionAngle = 360;
@@ -74,7 +74,7 @@ $(document).ready(
                 myAngle = myAngle + angleChange;
 
                 //This loop moves the head one step and then tracks the coordinates.  By implementing i+=5, we can then control the resolution.
-                for (var i = 0; i < myCompletionAngle; i+=myResolution) 
+                for (var i = 0; i < myCompletionAngle; i+=1) 
                 {
                     context.globalAlpha = 0.1;
                     context.lineTo(
