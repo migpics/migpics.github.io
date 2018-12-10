@@ -49,13 +49,13 @@ $(document).ready(
         // Initialize the list of "variables."
         var variables = 
             [
-                { name: 'clipAngle', label: 'Clip Angles', value: 80 },
-                { name: 'iterations', label: 'Iterations', value: 52 },
-                { name: 'angle2', label: 'Angle 2', value: 21 },
-                { name: 'size', label: 'Size', value: 50},
-                { name: 'angle1', label: 'Angle 1', value: 40 },
-                { name: 'yAxis', label: 'Y Axis', value: 40 },
-                { name: 'xAxis', label: 'X Axis', value: 50 }
+                { name: 'clipAngle', label: 'Clip Angles', value: 18 },
+                { name: 'iterations', label: 'Iterations', value: 54 },
+                { name: 'angle2', label: 'Angle 2', value: 35 },
+                { name: 'size', label: 'Size', value: 71},
+                { name: 'angle1', label: 'Angle 1', value: 62 },
+                { name: 'yAxis', label: 'Y Axis', value: 34 },
+                { name: 'xAxis', label: 'X Axis', value: 34 }
             ];
         
         function draw(startX, startY, myAngle, lineDistance, angleChange, myIterations, myCompletionAngle) 
