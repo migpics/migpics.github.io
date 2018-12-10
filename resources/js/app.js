@@ -59,7 +59,7 @@ $(document).ready(
                 { name: 'xAxis', label: 'X Axis', value: 50 }
             ];
         
-        function draw(startX, startY, myAngle, lineDistance, angleChange, myIterations, myCompletionAngle) 
+        function draw(startX, startY, myAngle, lineDistance, angleChange, myIterations, myCompletionAngle, myResolution) 
         {
             myGCode = new Array();
             myPBPCode = new Array();
