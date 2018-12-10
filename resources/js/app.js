@@ -149,9 +149,9 @@ $(document).ready(
             myPBPCode.pop();
             
             var drawingCode = preCode.concat(myPBPCode).join('\n'); //Adds each element to drawing code.
-           console.log(drawingCode.slice(-1)[0]);
+
             var drawingCode = drawingCode.concat(lastElement);
-             console.log(drawingCode(-1)[0]);
+
             
           
            var endCode = ["],\"closed\":true,\"strokeColor\":[1,0.91765,0.49412],\"strokeWidth\":5,\"strokeCap\":\"round\",\"miterLimit\":1}]]}]]"];
