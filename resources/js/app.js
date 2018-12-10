@@ -49,7 +49,7 @@ $(document).ready(
         var variables = 
             [
                 { name: 'clipAngle', label: 'Clip Angles', value: 80 },
-                { name: 'resolution', label: 'Resolution', value: 80 },
+                { name: 'resolution', label: 'Resolution', value: 100 },
                 { name: 'iterations', label: 'Iterations', value: 52 },
                 { name: 'angle2', label: 'Angle 2', value: 21 },
                 { name: 'size', label: 'Size', value: 50},
