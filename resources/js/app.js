@@ -143,11 +143,16 @@ $(document).ready(
            var preCode = ["[[\"Layer\",{\"applyMatrix\":true}],[\"Layer\",{\"applyMatrix\":true,\"children\":[[\"Path\",{\"applyMatrix\":true,\"data\":{\"color\":0,\"isPolygonal\":true},\"segments\":[ "];
            
             var lastElement = myPBPCode.slice(-1)[0];
+            console.log(lastElement);
             var lastElement = lastElement.slice(0, -1);
+            console.log(lastElement);
             myPBPCode.pop();
             
             var drawingCode = preCode.concat(myPBPCode).join('\n'); //Adds each element to drawing code.
+           console.log(drawingCode.slice(-1)[0]);
             var drawingCode = drawingCode.concat(lastElement);
+             console.log(drawingCode(-1)[0]);
+            
           
            var endCode = ["],\"closed\":true,\"strokeColor\":[1,0.91765,0.49412],\"strokeWidth\":5,\"strokeCap\":\"round\",\"miterLimit\":1}]]}]]"];
           
