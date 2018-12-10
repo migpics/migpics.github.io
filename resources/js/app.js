@@ -159,7 +159,7 @@ $(document).ready(
 					        "miterLimit":1\
                           }]]}]]\
                           \
-                          "];
+                          \"];
           
            var finalCode = drawingCode.concat(endCode);
             
