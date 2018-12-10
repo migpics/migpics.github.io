@@ -75,7 +75,7 @@ $(document).ready(
                 myAngle = myAngle + angleChange;
 
                 //This loop moves the head one step and then tracks the coordinates.  By implementing i+=5, we can then control the resolution.
-                for (var i = 0; i < myCompletionAngle; i+=1) 
+                for (var i = 0; i < myResolution; i+=1) 
                 {
                     context.globalAlpha = 0.1;
                     context.lineTo(
