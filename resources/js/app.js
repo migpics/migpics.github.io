@@ -28,7 +28,7 @@ $(document).ready(
         var canvas_height = 200;
 
         var myAngle = 360;
-        var lineDistance = 100;
+        var lineDistance = 10;
         var angleChange = 360;
         var myIterations = 36;
         var myCompletionAngle = 360;
