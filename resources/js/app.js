@@ -144,11 +144,11 @@ $(document).ready(
            var drawingCode = preCode.concat(myPBPCode).join('\n\n'); //Change this to PBP Information
           
            var endCode = ["],\"closed\":true,\"strokeColor\":[1,0.91765,0.49412],\"strokeWidth\":5,
-					        "\strokeCap"\:"\round"\,
-					        "\miterLimit"\:1
+					        \"\strokeCap\":\"round\",
+					        \"miterLimit\":1
                           }]]}]]
                           
-                          "\];
+                          \"];
           
            var finalCode = drawingCode.concat(endCode);
             
