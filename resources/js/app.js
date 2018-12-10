@@ -32,6 +32,7 @@ $(document).ready(
         var angleChange = 360;
         var myIterations = 36;
         var myCompletionAngle = 90;
+        var myResolution = 100;
      
 
         var myGCode = new Array();
@@ -50,6 +51,7 @@ $(document).ready(
             [
                 { name: 'clipAngle', label: 'Clip Angles', value: 80 },
                 { name: 'iterations', label: 'Iterations', value: 52 },
+                { name: 'resolution', label: 'Resolution', value: 100 },
                 { name: 'angle2', label: 'Angle 2', value: 21 },
                 { name: 'size', label: 'Size', value: 50},
                 { name: 'angle1', label: 'Angle 1', value: 40 },
@@ -114,6 +116,7 @@ $(document).ready(
                 lineDistance * getSliderValue('size'), 
                 angleChange * getSliderValue('angle2'), 
                 myIterations * getSliderValue('iterations'), 
+                myResolution * getSliderValue('resolution'), 
                 myCompletionAngle * getSliderValue('clipAngle'));
         }
         
