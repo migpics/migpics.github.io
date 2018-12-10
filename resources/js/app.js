@@ -88,7 +88,7 @@ $(document).ready(
                             Math.round(startY * 100) / 100));
                     
                     myPBPCode.push(
-                        '[{0},{1}]'.format(
+                        '[{0},{1}],'.format(
                             Math.round(startX * 100) / 100,
                             Math.round(startY * 100) / 100));
                 }
