@@ -144,8 +144,7 @@ $(document).ready(
                           [[\"Layer",{"applyMatrix":true}],["Layer",{"applyMatrix":true,"children":[["Path",{\
                           "applyMatrix":true,"data":\
                           {"color":0,"isPolygonal":true},\
-                          "segments":[ \
-                         "];
+                          "segments":[ "];
       
             
          
