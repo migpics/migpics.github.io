@@ -31,7 +31,7 @@ $(document).ready(
         var lineDistance = 10;
         var angleChange = 360;
         var myIterations = 36;
-        var myCompletionAngle = 360;
+        var myCompletionAngle = 90;
      
 
         var myGCode = new Array();
