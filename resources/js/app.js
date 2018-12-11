@@ -124,12 +124,12 @@ $(document).ready(
         
         function generateGCode() 
         { 
-          var preCode = ["G21;  Set Units to MM\n", "G1 F7600;  Set Speed\n", "M107; Pump Off\n", "M84; Motors off\n", 
-                       "G28; Home All Axis\n", myGCode[0] + '\n', "M106; Pump On\n" ]; 
+          var preCode = [";Pancake Spiral Generator v 0.1 GCODE Header Start","G21;  Set Units to MM", "G1 F7600;  Set Speed", "M107; Pump Off", "M84; Motors off", 
+                       "G28; Home All Axis", myGCode[0] + '\n', "M106; Pump On\n","G4 P750 ;Pause for 750 milliseconds\n" ]; //This string is the start of the GCODE file
          
-           var drawingCode = preCode.concat(myGCode).join('\n\n'); 
+           var drawingCode = preCode.concat(myGCode).join('\n'); 
           
-           var endCode = ["M107; Pump Off" , "G28; Home All Axis"];
+           var endCode = ["M107; Pump Off" ,"G4 P750 ;Pause for 750 milliseconds\n", "G28; Home All Axis"];
           
            var finalCode = drawingCode.concat(endCode);
             
