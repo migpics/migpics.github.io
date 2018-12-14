@@ -121,6 +121,8 @@ $(document).ready(
         
         
         //Generates the GCODE file
+        //Please note, this is not the best way to do this.  Adding string information can be done best with by using JSON.
+        //That code will come soon.
         
         function generateGCode() 
         { 
