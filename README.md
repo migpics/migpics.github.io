@@ -7,3 +7,5 @@ One that I have created recently is called Spiral Pancake Generator and was crea
 Check it out here at [Spiral Generator](http://migpics.github.io/spg)
 Next, on to new adventures!
 Miguel
+
+Here are the battery specs.
